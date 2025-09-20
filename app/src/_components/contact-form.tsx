@@ -1,6 +1,10 @@
+import { contactUsAction } from "@/app/actions";
+export type action ={
+action:  string;
+}
 export function ContactForm() {
   return (
-    <form className="flex items-center flex-col gap-3">
+    <form className="flex items-center flex-col gap-3" action={contactUsAction}>
         <h1 className="font-serif text-2xl text-center mx-auto text-emerald-500">DRIZZLE ORM WITH NEX Js</h1>
       <h2 className="text-2xl font-semibold">Contact Us</h2>
       <input
